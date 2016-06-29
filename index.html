@@ -1,0 +1,85 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- <link rel="stylesheet" href="css/leaflet.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/qgis2web.css">
+  <link rel="stylesheet" href="css/label.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.5.0/MarkerCluster.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.5.0/MarkerCluster.Default.css" /> -->
+  <!-- <link rel="stylesheet" href="css/MarkerCluster.css" /> -->
+  <!-- <link rel="stylesheet" href="css/MarkerCluster.Default.css" /> -->
+  <link rel="stylesheet" href="css/leaflet.draw.css" />
+  <link rel="stylesheet" href="css/leaflet.measurecontrol.css" />
+  <link rel="stylesheet" href="css/leaflet.easybutton.css" />
+</head>
+<body>
+  <h2 class="bar">Connecticut Childcare Providers</h2>
+  <div class="inputgroup legend" id="inputgroup">
+    <h4 id="provType" >Filter Providers</h4>
+    <label class="label" for="sel">Type of Provider</label><br>
+    <select id="sel" class="label info legend" type="text">
+      <option class="label" value="All">All</option>
+      <option class="label" value="phase3">Licensed</option>
+      <option class="label" value="UI">Unlicensed</option>
+    </select>
+    <br>
+    <label class="label" for="age">Age Group</label><br>
+    <select id="age" class="age info legend" type="text">
+      <option value="All">All</option>
+      <option value="itcap">Infant/Toddler</option>
+      <option value="pscap">PreSchool</option>
+      <option value="sacap">School-Age</option>
+    </select>
+    <br>
+    <label class="label" for="fac">Facility</label><br>
+    <select id="fac" class="info legend" type="text">
+      <option value="All">All</option>
+      <option value="Child Care Center">Child Care Center</option>
+      <option value="Family Child Care">Family Child Care</option>
+      <option value="Nursery School">Nursery School</option>
+    </select>
+    <!-- <br>
+    <label class="label" for="sel">Type of Provider</label><br>
+    <select id="sel" class="label info legend" type="text">
+      <option class="label" value="All">All</option>
+      <option class="label" value="phase3">Licensed</option>
+      <option class="label" value="UI">Unlicensed</option>
+    </select> -->
+  </div>
+  <div id="map" class="map">
+  </div>
+  <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+  <script src="js/underscore.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"   integrity="sha256-DI6NdAhhFRnO2k51mumYeDShet3I8AKCQf/tf7ARNhI="   crossorigin="anonymous"></script>
+  <script src="data/providers_Clean.js"></script>
+  <script src="data/towns_Clean.js"></script>
+    <script src="data/json_providerPoints1.js"></script>
+  <!-- <script src="js/underscore.js"></script> -->
+  <!-- <script src="js/leaflet-hash.js"></script>
+  <script src="js/label.js"></script> -->
+  <!-- <script src="js/leaflet.js"></script> -->
+  <!-- <script src="js/Autolinker.min.js"></script>
+  <script src="js/leaflet.draw.js"></script> -->
+  <script src="js/leaflet.easybutton.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.5.0/leaflet.markercluster-src.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.5.0/leaflet.markercluster.js"></script>
+  <!-- <script src="js/MarkerCluster.Spiderfier.js"></script>
+  <script src="js/MarkerClusterGroup.js"></script>
+  <script src="js/MarkerClusterGroup.Refresh.js"></script> -->
+  <!-- <script src="js/leaflet.markercluster.js"></script> -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+<!-- <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" /> -->
+    <!-- <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script> -->
